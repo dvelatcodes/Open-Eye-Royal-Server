@@ -9,13 +9,13 @@ const db = process.env.db;
 import router from "./routes/index.js";
 
 const PORT = process.env.PORT || 5000;
-app.use(express.json({ limit: "50mb" }));
-app.use(express.urlencoded({ extended: true }));
 app.use(
   cors({
-    origin: "*",
+    origin: "https://open-eye-royal.onrender.com",
   })
 );
+app.use(express.json({ limit: "50mb" }));
+app.use(express.urlencoded({ extended: true }));
 
 app.use("/", router);
 
