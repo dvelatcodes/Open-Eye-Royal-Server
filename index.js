@@ -11,7 +11,7 @@ import router from "./routes/index.js";
 const PORT = process.env.PORT || 5000;
 app.use(
   cors({
-    origin: "https://open-eye-royal.onrender.com",
+    origin: "https://client-open-eye-royal-dvelatcodes.vercel.app",
   })
 );
 app.use(express.json({ limit: "50mb" }));
