@@ -1021,9 +1021,12 @@ export const regStudent = async (req, res) => {
 // give student class
 // give student class
 export const studentAdmittedClass = async (req, res) => {
+  // console.log("try");
+  // console.log(req.body);
   try {
     const { pioneerId, studentId, studentClass } = req.body;
-    const checkPioneer = await Student.find({
+    // console.log("hello", pioneerId, studentId, studentClass);
+    const checkPioneer = await Pioneer.find({
       pioneerId: pioneerId,
     });
     if (checkPioneer) {
