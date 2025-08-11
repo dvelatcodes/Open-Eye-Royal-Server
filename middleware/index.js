@@ -1,7 +1,7 @@
 import dotenv from "dotenv";
 import jwt from "jsonwebtoken";
 import Pioneer from "../models/pioneer.js";
-import Student from "../models/student.js";
+// import Student from "../models/student.js";
 import Teacher from "../models/teacher.js";
 import NonStudent from "../models/nonStudent.js";
 
